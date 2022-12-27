@@ -1,0 +1,244 @@
+{% extends 'front/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper">
+    <div class="parallax filter-black">
+        <div class="parallax-image">
+            <img src="{% static 'front/img/bg100.jpg' %}" alt="..." />
+        </div>
+        <div class="small-info">
+            <h1>BREAKING NEWS</h1>
+        </div>
+    </div>
+
+    
+    <div class="section section-description">
+           <div class="container">
+               <h2><b>Description</b></h2>
+
+               <div class="row">
+                    <div class="col-md-6">
+                       <h4> Berita adalah laporan tercepat mengenai fakta atau ide terbaru yang benar, menarik atau penting bagi sebagian besar khalayak, melalui media berkala seperti surat kabar, radio, televisi, atau media internet. </h4>
+                       <p>
+                        </p>
+                        </p> </p>
+
+                   </div>
+                   <div class="col-md-6">
+                        <div id="description-carousel" class="carousel fade" data-ride="carousel">
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <img src="{% static 'front/img/bg101.jpg' %}" alt="..." />
+                                </div>
+                                <div class="item">
+                                  <img src="{% static 'front/img/gambar2.jpg' %}" alt="..." />
+                                </div>
+                                <div class="item">
+                                  <img src="{% static 'front/img/gambar3.jpg' %}" alt="..." />
+                                </div>
+                              </div>
+
+                              <ol class="carousel-indicators">
+                                <li data-target="#description-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#description-carousel" data-slide-to="1"></li>
+                                <li data-target="#description-carousel" data-slide-to="2"></li>
+                              </ol>
+                        </div>
+                   </div>
+                </div>
+
+                <div class="space-50"></div>
+                <hr>
+                <div class="space-50"></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2><b>Berita memiliki unsur-unsur isi pokok sebagai berikut:</b></h2>
+                        <p>
+Peristiwa apa yang terjadi?
+Di mana: Di mana peristiwa itu terjadi?
+Kapan: Kapan peristiwa itu terjadi?
+Siapa: Siapa yang terlibat pada peristiwa itu?
+Mengapa: Mengapa peristiwa terjadi?
+Bagaimana: Bagaimana proses peristiwa itu terjadi?</p>
+                         </p>
+ 
+                   </div>
+                   <div class="col-md-6">
+                       <h5><b>Apa saja ciri ciri dari berita?</b></h5>
+                       <p>
+                        ciri-ciri teks berita adalah faktual, aktual, unik atau menarik, sistematis dan lengkap. seimbang, dan komunikatif. ciri-ciri teks berita adalah faktual, aktual, unik atau menarik, sistematis dan lengkap.</p>
+                        </p>
+
+                   </div>
+               </div>
+           </div>
+    </div><!-- section -->
+    <div class="space-50"></div>
+
+    {% for a in artikel%}
+
+    {% endfor %}
+
+     <div class="social-line">
+         <div class="container">
+            <div class="row">
+                 <div class="col-md-3">
+                     <a href="" class="btn btn-round btn-fill btn-social btn-facebook">
+                         <i class="fa fa-facebook-square"></i> Facebook
+                     </a>
+                 </div>
+                  <div class="col-md-3">
+                     <a href="" class="btn btn-round btn-fill btn-social btn-twitter">
+                         <i class="fa fa-twitter"></i> Twitter
+                     </a>
+                 </div>
+                  <div class="col-md-3">
+                     <a href="" class="btn btn-round btn-fill btn-social btn-google">
+                         <i class="fa fa-google-plus-square"></i> Google+
+                     </a>
+                 </div>
+                 <div class="col-md-3">
+                     <a href="" class="btn btn-round btn-fill btn-social btn-pinterest">
+                         <i class="fa fa-pinterest"></i> Pinterest
+                     </a>
+                 </div>
+            </div>
+         </div>
+     </div>
+
+
+    <footer class="footer footer-big">
+        <!-- .footer-black is another class for the footer, for the transparent version, we recommend you to change the url of the image with your favourite image.          -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#" >
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   Find offers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Discover Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Our Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <h5 class="title"> Support</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                   Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   How it works
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   24/7 Available
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   We are hiring
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   Send Info
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="title"> Help</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                   Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Company Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   Money Back
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                 <div class="col-md-3">
+                    <h5 class="title">Latest News</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#" >
+                                   <i class="fa fa-twitter"></i> <b>Get Shit Done</b>
+                                   The best kit in the market is here, just give it a try and let us...
+                                   <hr class="hr-small">
+                                </a>
+                            </li>
+                            <li>
+                                  <a href="#" >
+                                   <i class="fa fa-twitter"></i>
+                                   We've just been featured on <b> Awwwards Website</b>! Thank you everybody for...
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <hr />
+            <div class="copyright">
+                &copy; Sandy Erlansyah - 2011102441172 - 2022
+            </div>
+        </div>
+    </footer>
+
+
+</div> <!-- wrapper -->
+{% endblock content %}
+

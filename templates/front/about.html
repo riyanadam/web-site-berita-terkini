@@ -1,0 +1,107 @@
+{% extends 'front/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper">
+    <div class="parallax filter-black">
+        <div class="parallax-image">
+            <img src="{% static "front/img/bg1002.jpg" %}">
+        </div>
+        <div class="small-info">
+            <h1>About Us</h1>
+        </div>
+    </div>
+
+    <div class="section">
+           <div class="container">
+               <h2 class="section-title">Diriku</h2>
+               <div class="row">
+                   <div class="col-md-6">
+                       <p>
+                        Saat dalam kondisi tersebut, terkadang seseorang menjadi ragu pada diri sendiri dan kehilangan motivasi. Namun, kamu bisa menghidupkan lagi keceriaan dan mulai bergerak untuk menggapai mimpi-mimpi dengan terus mencari dan menggali inspirasi dari berbagai sumber yang ada dalam kehidupan di sekitar.
+
+                        Nah, bagi kamu yang sedang mencari inspirasi, bisa lewat kata-kata. Ada banyak kata-kata inspiratif untuk diri sendiri yang bisa kamu baca.
+                        
+                        Dalam kata-kata inspiratif tersebut tentunya mengandung motivasi yang bisa bikin kamu mempunyai tujuan hidup. Tak hanya itu, kamu juga makin semangat dan percaya diri dalam menjalani hidup. </p>
+
+                   </div>
+                     <div class="col-md-6">
+                        <img src="{% static "front/img/adam.jpeg" %}" style="width:500px;">
+                   </div>
+               </div>
+           </div>
+    </div><!-- section -->
+
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">Working Flow</h2>
+            <div class="clients-presentation">
+                <div class="row">
+                    <div class="col-md-3">
+                       <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-note2"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 1. Research </h3>
+                                <p class="text-muted">We've been working with Apple for a new Touch ID. </p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-scissors"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 2. Design </h3>
+                                <p class="text-muted">There were many changes for the new design of Windows. </p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                       <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-tools"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 3. Develop </h3>
+                                <p class="text-muted">Working with big data about business is never easy.</p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon">
+                                <i class="pe-7s-paint"></i>
+                            </div>
+                            <div class="description">
+                                <h3> 4. Polish </h3>
+                                <p class="text-muted">We developed the Dropbox App for iOS devices. </p>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end section meet our clients -->
+
+
+     <div class="subscribe-line subscribe-line-default">
+             <div class="container">
+                <div class="row">
+                     <div class="col-md-9">
+                        <form class="">
+                             <div class="form-group">
+                                  <input type="text" value="" class="form-control" placeholder="Enter your email here...">
+                             </div>
+                         </form>
+                     </div>
+                     <div class="col-md-3">
+                         <button type="button" class="btn btn-info btn-fill btn-block">Join our team!</button>
+                     </div>
+                </div>
+             </div>
+         </div>
+
+{% endblock content %}

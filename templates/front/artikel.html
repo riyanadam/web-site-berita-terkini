@@ -1,0 +1,43 @@
+{% extends 'front/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper">
+    <div class="parallax filter-black">
+        <div class="parallax-image">
+            <img src="{% static "front/img/bg102.jpg" %}" />
+        </div>
+        <div class="small-info">
+            <h2>Artikel Berita Terkini</h2>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2 class="section-title">Artikel</h2>
+            <div class="row">
+                 <div class="col-md-4">
+                    {% for a in artikel %}
+
+                    <div class="card" style="width: 100rem;">
+                        <div class="card-body">
+                            <h2 class="fw-bold">{{forloop.counter}}</h2>
+                            <h2 class="fs-1"> "{{a.nama}}" </h2>
+            
+                            <p class="fs-1">Pencipta : {{a.pencipta}}</p>
+
+                            <p class="card-text">{{a.deskripsi}}</p>
+
+                            <p class="category">{{a.kategori}}</p>
+                        </div>
+                      </div>
+
+
+                     {% endfor %}</div>
+            </div>
+        </div>
+ 
+
+
+
+{% endblock content %}
